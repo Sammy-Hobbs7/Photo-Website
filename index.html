@@ -2,100 +2,176 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sammy Lulu Photography | Home</title>
+  <meta name="description" content="Accessible, heartfelt photography for weddings, couples, families, and portraits.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<header class="header">
-  <div class="logo-container">
-    <img src="images/logo.png" alt="Sammy Lulu Photography Logo">
-  </div>
-  <nav class="nav">
-    <a href="#">Home</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Services</a>
-    <a href="#">Book</a>
-    <a href="#">About</a>
-  </nav>
-</header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Sammy Lulu Photography home page">
+        <img src="images/logo.png" alt="Sammy Lulu Photography logo">
+        <span class="brand-text">
+          <span class="brand-name">Sammy Lulu Photography</span>
+          <span class="brand-tagline">Warm, story-led photography</span>
+        </span>
+      </a>
 
-<section class="hero">
-  <div class="hero-overlay">
-    <img src="images/logo.png" alt="Sammy Lulu Photography Logo" class="hero-logo">
-    <h2>Capturing Moments That Matter</h2>
-    <button class="btn">Explore Portfolio</button>
-  </div>
-</section>
-
-<section class="featured">
-  <h3>Featured Works</h3>
-  <div class="featured-grid">
-    <img src="images/feature1.jpg" alt="">
-    <img src="images/feature2.jpg" alt="">
-    <img src="images/feature3.jpg" alt="">
-  </div>
-  <button class="btn">Explore Portfolio</button>
-</section>
-
-<section class="services">
-  <h3>Services</h3>
-  <div class="services-row">
-    <div class="service">
-      <img src="images/weddingservice.jpg">
-      <p>Weddings</p>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="book.html">Book</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="service">
-      <img src="images/coupleservice.jpg">
-      <p>Couples Session</p>
-    </div>
-    <div class="service">
-      <img src="images/familyservice.jpg">
-      <p>Family Session</p>
-    </div>
-    <div class="service">
-      <img src="images/portraitservice.jpg">
-      <p>Portraits</p>
-    </div>
-  </div>
-  <button class="btn">Book Now</button>
-</section>
+  </header>
 
-<footer class="footer">
-  <div class="footer-container">
-    
-    <!-- Contact Section -->
-    <div class="footer-section contact">
-      <h4>Contact</h4>
-      <p>Email: sammyluluphotography@gmail.com</p>
-      <p>Phone: (123) 456-7890</p>
-      <p>Location: Millersville, PA</p>
-    </div>
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Accessible by design</p>
+          <h1>Photography that feels calm, natural, and easy to connect with.</h1>
+          <p class="lede">I create images that celebrate real connection, while making the planning experience clear, welcoming, and comfortable from the first click to the final gallery.</p>
+          <div class="button-row">
+            <a class="btn" href="portfolio.html">Explore the portfolio</a>
+            <a class="btn-secondary" href="book.html">Book a session</a>
+          </div>
+        </div>
 
-    <!-- Social Media Section -->
-    <div class="footer-section social">
-      <h4>Follow Me</h4>
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">Pinterest</a>
-    </div>
+        <div class="hero-panel">
+          <img src="images/heroimage.jpg" alt="A couple standing together during a golden-hour portrait session">
+        </div>
+      </div>
+    </section>
 
-    <!-- Quick Links Section -->
-    <div class="footer-section links">
-      <h4>Quick Links</h4>
-      <a href="#">Home</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Services</a>
-      <a href="#">Book</a>
-      <a href="#">About</a>
-    </div>
-    
-  </div>
-  
-  <div class="footer-bottom">
-    <p>&copy; 2026 Sammy Lulu Photography. All rights reserved.</p>
-  </div>
-</footer>
+    <section aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Featured work</p>
+          <h2 id="featured-heading">A few favorite moments</h2>
+          <p class="section-intro">These sample images show the kind of natural, emotive storytelling that runs throughout the site.</p>
+        </div>
 
+        <div class="card-grid">
+          <article class="card">
+            <img src="images/feature1.jpg" alt="Bride and groom smiling during a wedding portrait">
+            <p class="tag">Wedding</p>
+            <h3>Quiet joy, documented honestly</h3>
+            <p>Coverage focused on meaningful details, real emotion, and the rhythm of the day.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/feature2.jpg" alt="Couple laughing together during an outdoor session">
+            <p class="tag">Couples</p>
+            <h3>Gentle direction, natural expressions</h3>
+            <p>Sessions that feel relaxed so your photos still look like you.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/feature3.jpg" alt="Family posing together outdoors">
+            <p class="tag">Family</p>
+            <h3>Images made for remembering</h3>
+            <p>Portraits that hold onto connection, personality, and shared moments.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="muted-section" aria-labelledby="services-preview-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-preview-heading">Sessions shaped around your story</h2>
+          <p class="section-intro">Every service page uses the same clear structure so visitors can compare options without confusion.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="card">
+            <img src="images/weddingservice.jpg" alt="Wedding couple embracing during portraits">
+            <h3>Weddings</h3>
+            <p>Full-day and intimate wedding coverage with space for candid and editorial moments.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/coupleservice.jpg" alt="Couple standing close together during a portrait session">
+            <h3>Couples</h3>
+            <p>Engagements, anniversaries, and everyday love stories captured in a relaxed way.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/familyservice.jpg" alt="Family spending time together outdoors">
+            <h3>Family</h3>
+            <p>Playful, connection-first images with guidance that keeps the experience low-stress.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/portraitservice.jpg" alt="Individual portrait session with a subject smiling at the camera">
+            <h3>Portraits</h3>
+            <p>Portrait sessions for personal milestones, graduates, creatives, and professionals.</p>
+          </article>
+        </div>
+
+        <div class="button-row">
+          <a class="btn" href="services.html">View services</a>
+          <a class="btn-secondary" href="about.html">Meet Sammy</a>
+        </div>
+      </div>
+    </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <section aria-labelledby="footer-brand">
+          <h2 id="footer-brand">Sammy Lulu Photography</h2>
+          <p class="footer-note">Serving clients with warm, story-centered photography and a welcoming booking experience.</p>
+        </section>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <section aria-labelledby="contact-heading">
+          <h3 id="contact-heading">Contact</h3>
+          <ul class="contact-list">
+            <li><a href="mailto:sammyluluphotography@gmail.com">sammyluluphotography@gmail.com</a></li>
+            <li><a href="tel:+11234567890">(123) 456-7890</a></li>
+            <li>Millersville, Pennsylvania</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="social-heading">
+          <h3 id="social-heading">Social</h3>
+          <ul class="social-list">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sammy Lulu Photography. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
