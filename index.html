@@ -16,7 +16,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Sammy Lulu Photography home page">
-        <img src="images/logo.png" alt="Sammy Lulu Photography logo">
+        <img src="images/logo.png" alt="">
         <span class="brand-text">
           <span class="brand-name">Sammy Lulu Photography</span>
           <span class="brand-tagline">Warm, story-led photography</span>
@@ -39,7 +39,7 @@
     <section class="hero">
       <div class="container hero-layout">
         <div class="hero-copy">
-          <p class="eyebrow">Accessible by design</p>
+          
           <h1>Photography that feels calm, natural, and easy to connect with.</h1>
           <p class="lede">I create images that celebrate real connection, while making the planning experience clear, welcoming, and comfortable from the first click to the final gallery.</p>
           <div class="button-row">
@@ -54,71 +54,101 @@
       </div>
     </section>
 
-    <section aria-labelledby="featured-heading">
+    <section>
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Featured work</p>
-          <h2 id="featured-heading">A few favorite moments</h2>
-          <p class="section-intro">These sample images show the kind of natural, emotive storytelling that runs throughout the site.</p>
+          <p class="page-subtitle">Click through a few favorite moments</p>
+          <p class="page-name">This section now works like a visual gallery, so it looks different from the service cards below.</p>
         </div>
 
-        <div class="card-grid">
-          <article class="card">
-            <img src="images/feature1.jpg" alt="Bride and groom smiling during a wedding portrait">
-            <p class="tag">Wedding</p>
-            <h3>Quiet joy, documented honestly</h3>
-            <p>Coverage focused on meaningful details, real emotion, and the rhythm of the day.</p>
-          </article>
+        <div class="featured-gallery">
+          <div class="featured-carousel" aria-label="Featured work image carousel">
+            <input checked class="carousel-toggle" id="featured-slide-1" name="featured-carousel" type="radio">
+            <input class="carousel-toggle" id="featured-slide-2" name="featured-carousel" type="radio">
+            <input class="carousel-toggle" id="featured-slide-3" name="featured-carousel" type="radio">
+            <input class="carousel-toggle" id="featured-slide-4" name="featured-carousel" type="radio">
 
-          <article class="card">
-            <img src="images/feature2.jpg" alt="Couple laughing together during an outdoor session">
-            <p class="tag">Couples</p>
-            <h3>Gentle direction, natural expressions</h3>
-            <p>Sessions that feel relaxed so your photos still look like you.</p>
-          </article>
+            <div class="featured-track">
+              <a class="featured-slide" href="portfolio.html">
+                <img src="images/LakeWedding.jpg" alt="Bride and groom standing by the lake during their wedding portraits">
+              </a>
 
-          <article class="card">
-            <img src="images/feature3.jpg" alt="Family posing together outdoors">
-            <p class="tag">Family</p>
-            <h3>Images made for remembering</h3>
-            <p>Portraits that hold onto connection, personality, and shared moments.</p>
-          </article>
+              <a class="featured-slide" href="portfolio.html">
+                <img src="images/HorseImage.jpg" alt="Portrait session featuring a horse in an outdoor setting">
+              </a>
+
+              <a class="featured-slide" href="portfolio.html">
+                <img src="images/FamilyPortfolio.jpg" alt="Family gathered outdoors together for a portrait">
+              </a>
+
+              <a class="featured-slide" href="portfolio.html">
+                <img src="images/feature2.jpg" alt="Couple smiling together during a relaxed outdoor session">
+              </a>
+
+              <a class="featured-slide" href="portfolio.html">
+                <img src="images/feature1.jpg" alt="Bride and groom smiling during a wedding portrait">
+              </a>
+
+              <a class="featured-slide" href="portfolio.html">
+                <img src="images/feature3.jpg" alt="Family posing together outdoors">
+              </a>
+            </div>
+
+            <label class="carousel-arrow prev prev-1" for="featured-slide-4" aria-label="Show previous featured image"></label>
+            <label class="carousel-arrow next next-1" for="featured-slide-2" aria-label="Show next featured image"></label>
+            <label class="carousel-arrow prev prev-2" for="featured-slide-1" aria-label="Show previous featured image"></label>
+            <label class="carousel-arrow next next-2" for="featured-slide-3" aria-label="Show next featured image"></label>
+            <label class="carousel-arrow prev prev-3" for="featured-slide-2" aria-label="Show previous featured image"></label>
+            <label class="carousel-arrow next next-3" for="featured-slide-4" aria-label="Show next featured image"></label>
+            <label class="carousel-arrow prev prev-4" for="featured-slide-3" aria-label="Show previous featured image"></label>
+            <label class="carousel-arrow next next-4" for="featured-slide-1" aria-label="Show next featured image"></label>
+
+            <div class="carousel-dots" aria-label="Choose a featured image">
+              <label class="carousel-dot" for="featured-slide-1" aria-label="Show first featured image"></label>
+              <label class="carousel-dot" for="featured-slide-2" aria-label="Show second featured image"></label>
+              <label class="carousel-dot" for="featured-slide-3" aria-label="Show third featured image"></label>
+              <label class="carousel-dot" for="featured-slide-4" aria-label="Show fourth featured image"></label>
+            </div>
+          </div>
+
+          <p class="featured-gallery-note">Use the arrows or the small diamonds to click through the images.</p>
         </div>
       </div>
     </section>
 
-    <section class="muted-section" aria-labelledby="services-preview-heading">
+    <section class="muted-section">
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Services</p>
-          <h2 id="services-preview-heading">Sessions shaped around your story</h2>
-          <p class="section-intro">Every service page uses the same clear structure so visitors can compare options without confusion.</p>
+        <div class="section-heading compact">
+          <h2 class="eyebrow">Services</h2>
+          <p class="page-subtitle">Sessions shaped around your story</p>
+          <p class="page-name">Every service page uses the same clear structure so visitors can compare options without confusion.</p>
         </div>
 
         <div class="services-grid">
-          <article class="card">
+          <div class="card">
             <img src="images/weddingservice.jpg" alt="Wedding couple embracing during portraits">
             <h3>Weddings</h3>
             <p>Full-day and intimate wedding coverage with space for candid and editorial moments.</p>
-          </article>
+          </div>
 
-          <article class="card">
+          <div class="card">
             <img src="images/coupleservice.jpg" alt="Couple standing close together during a portrait session">
             <h3>Couples</h3>
             <p>Engagements, anniversaries, and everyday love stories captured in a relaxed way.</p>
-          </article>
+          </div>
 
-          <article class="card">
+          <div class="card">
             <img src="images/familyservice.jpg" alt="Family spending time together outdoors">
             <h3>Family</h3>
             <p>Playful, connection-first images with guidance that keeps the experience low-stress.</p>
-          </article>
+          </div>
 
-          <article class="card">
+          <div class="card">
             <img src="images/portraitservice.jpg" alt="Individual portrait session with a subject smiling at the camera">
             <h3>Portraits</h3>
             <p>Portrait sessions for personal milestones, graduates, creatives, and professionals.</p>
-          </article>
+          </div>
         </div>
 
         <div class="button-row">
@@ -128,13 +158,13 @@
       </div>
     </section>
 
-
+    
 
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <section aria-labelledby="footer-brand">
-          <h2 id="footer-brand">Sammy Lulu Photography</h2>
+        <section>
+          <h2>Sammy Lulu Photography</h2>
           <p class="footer-note">Serving clients with warm, story-centered photography and a welcoming booking experience.</p>
         </section>
 
@@ -149,17 +179,17 @@
           </ul>
         </nav>
 
-        <section aria-labelledby="contact-heading">
-          <h3 id="contact-heading">Contact</h3>
+        <section>
+          <h3>Contact</h3>
           <ul class="contact-list">
-            <li><a href="mailto:sammyluluphotography@gmail.com">sammyluluphotography@gmail.com</a></li>
-            <li><a href="tel:+11234567890">(123) 456-7890</a></li>
+            <li><a>sammyluluphotography@gmail.com</a></li>
+            <li><a>(123) 456-7890</a></li>
             <li>Millersville, Pennsylvania</li>
           </ul>
         </section>
 
-        <section aria-labelledby="social-heading">
-          <h3 id="social-heading">Social</h3>
+        <section>
+          <h3>Social</h3>
           <ul class="social-list">
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Facebook</a></li>
